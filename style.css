@@ -67,9 +67,9 @@ display: flex;
 background-color: coral;
 flex: 1;
 flex-direction: column;
-justify-content: center;
-align-items: center;
-/* position: static; */
+/* justify-content: center; */
+/* align-items: center; */
+position: relative;
 }
 #inputSection{
     display: flex;
@@ -81,11 +81,9 @@ align-items: center;
     background-color: lightseagreen;
     flex: 1;    
 }
-p:nth-of-type(2){ 
-background-color: chartreuse;
-margin: 10px;
-}
-p:nth-of-type(3){
-    margin: 10px;
-    background-color: cornflowerblue;
+
+.paras{
+    margin: 20px;
+    padding: 10px;
+    position: relative;
 }
