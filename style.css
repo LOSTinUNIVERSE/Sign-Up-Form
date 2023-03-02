@@ -65,7 +65,7 @@ a{
 #paraSection{
 display: flex;
 background-color: coral;
-flex: 1;
+flex: 0.6;
 flex-direction: column;
 /* justify-content: center; */
 /* align-items: center; */
@@ -80,9 +80,9 @@ flex-direction: column;
     flex: 1;
     /* flex-direction: column; */
     position: relative;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: flex-end;
+    /* flex-wrap: wrap; */
+    /* justify-content: start; */
+    align-items: flex-start;
 }
 input{
    /* position: relative; */
@@ -92,20 +92,51 @@ input{
 }
 form{
     display: flex;
-    flex: 1 1 50vw;
+    flex-direction: column;
+    flex: 1 0 100%;
     position: relative;
     margin-right: 10vw;
     /* height: 20vh; */
-    /* width: 50vw; */
-    background-color: limegreen;
+    /* width: 100vw; */
+    background-color: lightsalmon;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
+}
+h1{
+    margin: 0px;
+}
+ul{
+    background-color: lightskyblue;
+    display: flex;
+    flex: 1 1 100px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0px; ;
+}
+li{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0px;
 }
 #btnAndLink{
-    display: flex;
-    background-color: lightseagreen;
-    flex: 1;    
+    flex-direction: column;
+  display: flex;
+  background-color: lightseagreen;
+  flex: 1;  
+  justify-content: center;
+  align-content: center;  
+}  
+button{
+    align-self: center;
+width: 100px;
+height: 50px;
+}
+span{
+    margin-top: 10px;
+    align-self: center;
 }
 
 .paras{
