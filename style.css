@@ -69,12 +69,22 @@ flex: 1;
 flex-direction: column;
 /* justify-content: center; */
 /* align-items: center; */
-position: relative;
+/* align-content: center; */
+/* justify-content: center; */
+/* align-items: center; */
+/* position: relative; */
 }
 #inputSection{
     display: flex;
     background-color: lightslategray;
     flex: 1;
+    /* flex-direction: column; */
+    position: relative;
+}
+input{
+   /* position: relative; */
+   width: 10vw;
+   height: 5vh;
 }
 #btnAndLink{
     display: flex;
@@ -83,7 +93,10 @@ position: relative;
 }
 
 .paras{
-    margin: 20px;
-    padding: 10px;
+    /* margin: 20px; */
+    /* padding: 10px; */
     position: relative;
+    align-self: flex-start;
+    width: 30vw;
+    height: 10vh;
 }
