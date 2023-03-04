@@ -2,9 +2,6 @@
     font-family: lemonMilk;
     src: url(font/LEMONMILK-Regular.otf);
 }
-body{
-    background-color: bisque;
-}
 #container{
     background-color: rgb(92, 38, 74);
     display: flex;
@@ -14,12 +11,15 @@ body{
     position: absolute;
 }
 #media-container{
-    background-color: cadetblue;
     display: flex;
-    flex: 0.7;
+    flex: 0.6;
     position: relative;
+    width: 100vh;
+    height: 100vh;
 }
 img{
+    display: flex;
+    flex: 1;
     width: 100%;
     height: 100%;
     position: relative;;
@@ -29,12 +29,16 @@ position: absolute;
 width: 220px;
 height: 200px;
 display: flex;
+flex: 1;
 align-self: flex-end;
 margin-bottom: 30px;
 }
 p{
-    margin-top: 20px;
-    background-color: white;
+    margin-top: 40px;
+    background-color: inherit;
+    color: rgb(241, 239, 238);
+    margin-left: 40px;
+    font-size: 24px;
     display: flex;
     align-self: flex-end;
     position: absolute;
@@ -55,16 +59,22 @@ a{
     font-style: normal;
     justify-self: center;
 }
+span{
+    color: white;
+    font-size: 24px;
+}
 #form-container{
     background-color: lightgreen;
     display: flex;
     flex: 1;
     position: relative;
     flex-direction: column;
+    height: 100vh;
+    width: 100vh;
 }
 #paraSection{
 display: flex;
-background-color: coral;
+background-color: rgb(84, 78, 76);
 flex: 0.6;
 flex-direction: column;
 /* justify-content: center; */
@@ -84,11 +94,10 @@ flex-direction: column;
     /* justify-content: start; */
     align-items: flex-start;
 }
-input{
-   /* position: relative; */
-   width: 20vw;
-   height: 4vh;
-   margin: 2vh;
+
+label{
+    margin-top: 10px;
+    flex-shrink: 1;
 }
 form{
     display: flex;
@@ -98,16 +107,17 @@ form{
     margin-right: 10vw;
     /* height: 20vh; */
     /* width: 100vw; */
-    background-color: lightsalmon;
+    background-color: rgb(117, 110, 107);
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
 }
 h1{
     margin: 0px;
+    font-size: 30px;
 }
 ul{
-    background-color: lightskyblue;
+    background-color: rgb(150, 147, 142);
     display: flex;
     flex: 1 1 100px;
     flex-wrap: wrap;
@@ -116,6 +126,7 @@ ul{
 }
 li{
     display: flex;
+    flex-direction: column;
     flex: 1 1 auto;
     flex-wrap: wrap;
     list-style: none;
@@ -124,7 +135,7 @@ li{
 #btnAndLink{
     flex-direction: column;
   display: flex;
-  background-color: lightseagreen;
+  background-color: rgb(40, 44, 44);
   flex: 1;  
   justify-content: center;
   align-content: center;  
@@ -138,7 +149,30 @@ span{
     margin-top: 10px;
     align-self: center;
 }
+input:required{
+    border: 2px solid black;
+}
 
+ input:invalid { 
+    border: 3px solid lightsalmon
+}  
+
+input:valid{
+    border: 3px solid lightgreen;}
+
+
+input:focus {
+box-shadow: 3px 2px 2px 1px lightseagreen;
+border: 5px solid lightskyblue;
+}
+input{
+    /* position: relative; */
+    width: 20vw;
+    height: 4vh;
+    border-radius: 10px;
+    /* margin: 2vh; */
+    
+}
 .paras{
     /* margin: 20px; */
     /* padding: 10px; */
@@ -146,4 +180,18 @@ span{
     align-self: flex-start;
     width: 30vw;
     height: 10vh;
+}
+p:nth-of-type(1){
+    font-size: 20px;
+    color: white;
+    /* background-color: inherit; */
+}
+button{
+    background-color: lightskyblue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 10px  ;
+    width: 120px;
+    height: 40px;
 }

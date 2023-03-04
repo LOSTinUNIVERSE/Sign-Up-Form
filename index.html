@@ -5,64 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="signForm.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
     <div id="container">
         <div id="media-container">
-            <img src="media/tech.jpg" alt="seems like there is a problem">
-            <img src="media/—Pngtree—high-tech informatization_5417397.png" alt="">
-            <p>let us empower your business </p>
+            <img id="bigOne" src="media/tech.jpg" alt="seems like there is a problem">
+            <img  src="media/—Pngtree—high-tech informatization_5417397.png" id="smallOne" alt="">
+            <p id="vision">let us empower your business </p>
             <footer>
                 <a href='https://pngtree.com/so/high-tech'>authors credit</a>
             </footer>
         </div>
         <div id="form-container">
             <div id="paraSection">
-                <p class="paras">aaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    aaaaaaaaaa
-                    aa
+                <p class="paras">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up now to get started.
                 </p>
-                <p class="paras">you know you want to</p>
+                <p class="paras">You know you want to</p>
             </div>
             <div id="inputSection">
-                <form action="#" method="post" id="form1">
+                <form action="" method="" id="form1">
                     <h1>Let's fill this !</h1>
                     <ul>
                         <li>
-                            <label for=""></label>
-                            <input type="text" size="20" id="">
+                            <label for="" aria-required="true">NAME</label>
+                            <input type="text" size="20" id=""  required>
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text" size="20" id="">
+                            <label for="">FULL NAME</label>
+                            <input type="text" size="20" id="" require>
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text" size="20" id="">
+                            <label for="">YOUR EMAIL</label>
+                            <input type="email" size="20" id=""required>
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text" size="20" id="">
+                            <label for="">PHONE NUMBER</label>
+                            <input type="tel" size="20" id="" required>
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text" size="20" id="">
+                            <label for="">PASSWORD</label>
+                            <input type="password" size="20" placeholder="password" name="pass1" id="password" required>
                         </li>
                         <li>
-                            <label for=""></label>
-                            <input type="text" size="20" id="">
+                            <label for="">CONFIRM PASSWORD</label>
+                            <input type="password" size="20" name="pass1"  placeholder="confirm password"
+                             id="confirmPassword" required>
                         </li>
                     </ul>
                 </form>
             </div>
             <div id="btnAndLink">
-                <button type="submit" form="form1">sign up boy</button>
-                <span>You  have login man? No worries, You can sign in here -> <a href="#">Log in</a></span>
+                <button type="submit" form="form1" id="submit" value="">sign up boy</button>
+                <span>Already have login? No worries, You can sign in here > <a href="#">Log in</a></span>
             </div>        
         </div>
+
     </div>
 </body>
 </html>
